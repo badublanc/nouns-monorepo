@@ -44,20 +44,6 @@ const ProposalContent: React.FC<ProposalContentProps> = props => {
       <Row>
         <Col className={classes.section}>
           <h5>
-            <Trans>Description</Trans>
-          </h5>
-          {proposal?.description && (
-            <ReactMarkdown
-              className={classes.markdown}
-              children={processProposalDescriptionText(proposal.description, proposal.title)}
-              remarkPlugins={[remarkBreaks]}
-            />
-          )}
-        </Col>
-      </Row>
-      <Row>
-        <Col className={classes.section}>
-          <h5>
             <Trans>Proposed Transactions</Trans>
           </h5>
           <ol>
@@ -114,6 +100,20 @@ const ProposalContent: React.FC<ProposalContentProps> = props => {
               );
             })}
           </ol>
+        </Col>
+      </Row>
+      <Row>
+        <Col className={classes.section}>
+          <h5>
+            <Trans>Description</Trans>
+          </h5>
+          {proposal?.description && (
+            <ReactMarkdown
+              className={classes.markdown}
+              children={processProposalDescriptionText(proposal.description, proposal.title)}
+              remarkPlugins={[remarkBreaks]}
+            />
+          )}
         </Col>
       </Row>
     </>
