@@ -4,7 +4,15 @@
   margin-top: 2rem;
 }
 
-.section h5 {
+.section2 {
+  word-wrap: break-word;
+  padding-top: 2rem;
+  margin-top: 0rem;
+  margin-bottom: -2rem;
+}
+
+.section h5,
+.section2 h5 {
   font-size: 1.7rem;
   margin-top: 1rem;
   font-family: 'Londrina Solid';

@@ -42,7 +42,7 @@ const ProposalContent: React.FC<ProposalContentProps> = props => {
   return (
     <>
       <Row>
-        <Col className={classes.section}>
+        <Col className={classes.section2}>
           <h5>
             <Trans>Proposed Transactions</Trans>
           </h5>
